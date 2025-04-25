@@ -1,5 +1,4 @@
-import { useGSAP } from "@gsap/react";
-import {gsap} from 'gsap'
+import { easeIn, motion } from "framer-motion";
 import BrickButton from "../../components/BrickButton";
 import { wordCarousel } from "../../resources/Constants";
 import HeroExperience from "./hero-models/HeroExperience";
@@ -10,29 +9,13 @@ import { AnimatePresence } from "framer-motion";
 
 const HeroSection = ({refData}:{refData:React.RefObject<HTMLDivElement | null>}) => {
   const [isLoading, setIsLoading] = useState(true)
-  useGSAP(() => {
-    gsap.fromTo(
-      "hero-text, h1",
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        stagger:0.2,
-        ease: 'power2.inOut',
-        duration:1,
-      },
-    
-    );
-  },[]);
+ 
 
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); 
+    }, 300); 
     
     return () => clearTimeout(timer);
   }, []);
@@ -58,7 +41,11 @@ const HeroSection = ({refData}:{refData:React.RefObject<HTMLDivElement | null>})
         >
           <div className="flex flex-col gap-7">
             <div className="hero-text">
-              <h1>
+              <motion.h1
+              initial={{opacity:0, y:50}}
+             animate={{opacity:1, y:0}}
+              transition={{duration:0.9, ease: easeIn, delay:0.8}}
+              >
                 Shaping
                 <span className=" slide">
                   <span className=" wrapper">
@@ -78,9 +65,17 @@ const HeroSection = ({refData}:{refData:React.RefObject<HTMLDivElement | null>})
                     ))}
                   </span>
                 </span>
-              </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              </motion.h1>
+              <motion.h1
+                initial={{opacity:0, y:50,}}
+               animate={{opacity:1, y:0}}
+               transition={{duration:0.9, ease: easeIn, delay:0.8}}
+              >into Real Projects</motion.h1>
+              <motion.h1
+                initial={{opacity:0, y:50}}
+               animate={{opacity:1, y:0}}
+               transition={{duration:0.9, ease: easeIn, delay:0.8}}
+              >that Deliver Results</motion.h1>
             </div>
             <p
               className=" text-white-50 text-[14px] md:text-xl

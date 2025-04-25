@@ -28,7 +28,7 @@ const Nav = ({
       const windowHeight = window.innerHeight;
       const fullHeight = document.documentElement.scrollHeight;
       const isAtBottom = scrollTop + windowHeight >= fullHeight - 50;
-      const isInSafariRange = rect.top <= navHeight && rect.bottom >= navHeight
+      const isInSafariRange = rect.top <= navHeight && rect.bottom >= navHeight;
 
       if (isAtBottom || isInSafariRange) {
         setIsBottom(true);
@@ -48,31 +48,18 @@ const Nav = ({
 
 
 
-  //   const handleScroll = () => {
-  //     const section = safari.current;
-  //     const nav = navRef.current;
-
-  //     if (!section) return;
-
-  //     const rect = section.getBoundingClientRect();
-  //     const navHeight = nav?.offsetHeight || 0;
-
-  //     if (rect.top <= navHeight && rect.bottom >= navHeight) {
-  //       setIsBottom(true);
-  //     } else {
-  //       setIsBottom(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
   const handleScroll = (ref: React.RefObject<HTMLDivElement | null>) => {
     setTimeout(() => {
-      ref.current?.scrollIntoView({ behavior: "smooth" });
+      const element = ref.current;
+
+      if (!element) return;
+
+      const top = element.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({ top: top - 100, behavior: "smooth" });
     }, 200);
   };
+
   return (
     <div className="navbar fixed top-0 z-[999] flex w-full max-w-[1600px] items-center justify-center px-2">
       <nav
