@@ -1,3 +1,5 @@
+// import BrickButton from "../../components/BrickButton";
+// import CustomPillButton from "../../components/CustomPillButton";
 import IphoneSim from "../../components/IphoneSim";
 import SafariLayout from "../../components/SafariLayout";
 
@@ -52,7 +54,9 @@ const WorkSection = ({refData}:{refData:React.RefObject<HTMLDivElement | null>} 
        startRotate= {7}
 
        />
+
    </div>
+        {/* <span className="px-5 flex  "><CustomPillButton  subTitle="" title="Want more?"/></span> */}
    </>
   );
 };

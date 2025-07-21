@@ -88,7 +88,7 @@ const Nav = ({
         </ul>
 
         <div>
-          <CustomPillButton isBottom={isBottom} title="Let's talk" />
+          <CustomPillButton  isBottom={isBottom} subTitle="Have an idea?" title="Let's talk" />
         </div>
       </nav>
     </div>

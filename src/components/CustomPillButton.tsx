@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const CustomPillButton = ({title, isBottom}:{title:string, isBottom:boolean}) => {
+const CustomPillButton = ({title, subTitle, isBottom}:{title:string, subTitle:string, isBottom:boolean}) => {
   return (
    <Link
    className={` h-9 w-32 flex
@@ -24,7 +24,7 @@ const CustomPillButton = ({title, isBottom}:{title:string, isBottom:boolean}) =>
    <span className=" inline-block translate-y-[10px]
    transition-transform group-hover:translate-y-9
    duration-400 
-   ">Have an idea?</span> 
+   ">{subTitle}</span> 
 
    <span className=" inline-block 
     transition-transform translate-y-[10px]

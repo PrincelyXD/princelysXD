@@ -24,7 +24,7 @@ const Testimonials = ({refData}: {refData:React.RefObject<HTMLDivElement | null>
                         <div className='flex gap-x-3 items-center'>
                             <div>
 
-                            <img src={item.imgPath} alt={`${item.name}'s review`} />
+                            <img className='h-[50px] rounded-3xl' src={item.imgPath} alt={`${item.name}'s review`} />
                             </div>
 
                               <div>

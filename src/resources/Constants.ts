@@ -11,8 +11,8 @@ export const wordCarousel = [
 
 export const counterResources = [
   { value: 3, suffix: "+", label: "Years of Experience" },
-  { value: 160, suffix: "+", label: "Satisfied Clients" },
-  { value: 78, suffix: "+", label: "Completed Projects" },
+  { value: 60, suffix: "+", label: "Satisfied Clients" },
+  { value: 44, suffix: "+", label: "Completed Projects" },
   { value: 92, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -167,45 +167,45 @@ export const techStackIcons = [
 
 export const testimonialData = [
   {
-    name: "Darius Fields",
-    mentions: "@dariusfields",
+    name: "Smart Okafor",
+    mentions: "@smartokafor",
     review:
-      "Princely was incredible to work with. He took our scattered ideas and turned them into a clean, high-performing website. Super efficient and creative!",
-    imgPath: "/images/client3.png",
+      "We hired Princely to clean up our old site and build out a few new pages. He delivered ahead of schedule and even improved a few things we hadn’t considered. Super dependable.",
+    imgPath: "/images/user.png",
   },
   {
-    name: "Mila Dawson",
-    mentions: "@miladawson",
+    name: "Melissa Grant",
+    mentions: "@melissagrant",
     review:
-      "From start to finish, working with Princely was smooth and professional. The end result was better than we imagined. He's the real deal.",
-    imgPath: "/images/client4.png",
+      "Honestly didn’t expect things to go this smoothly. Communication was clear, and the end result matched what we had in mind. Would work with him again in a heartbeat.",
+    imgPath: "/images/user.png",
   },
   {
-    name: "Ava Monroe",
-    mentions: "@avamonroe",
+    name: "Ashley Rodriguez",
+    mentions: "@ashleyrodriguez",
     review:
-      "If you're looking for someone who understands the assignment and executes flawlessly—it's Princely. His design instincts are just elite.",
-    imgPath: "/images/client2.png",
+      "Princely helped us launch our landing page under a tight deadline. It not only looked great, but the load time and mobile experience were spot on.",
+    imgPath: "/images/user.png",
   },
   {
-    name: "Sienna Cruz",
-    mentions: "@siennacruz",
+    name: "Tolu Adebayo",
+    mentions: "@tolu.adebayo",
     review:
-      "Princely brought our vision to life with elegance and precision. The website not only looks amazing, it performs flawlessly.",
-    imgPath: "/images/client5.png",
+      "We had a rough wireframe and no solid design direction. Princely brought clarity and style. The site feels polished and loads super fast. Definitely leveled us up.",
+    imgPath: "/images/user.png",
   },
   {
-    name: "Elijah Stone",
-    mentions: "@elijahstone",
+    name: "James Patel",
+    mentions: "@james.patel",
     review:
-      "Great communication, top-tier execution. Princely's work ethic and attention to detail are unmatched.",
-    imgPath: "/images/client6.png",
+      "Appreciated how honest and detailed Princely was throughout the process. He pointed out some UX issues we hadn’t noticed. Solid experience all around.",
+    imgPath: "/images/user.png",
   },
   {
-    name: "Nova Pierce",
-    mentions: "@novapierce",
+    name: "Chiamaka Umeh",
+    mentions: "@chiamaka.umeh",
     review:
-      "We gave Princely the reins, and he blew us away. His front-end skills are insane, and he gets how to build for users.",
-    imgPath: "/images/client1.png",
+      "We gave Princely full control of the front-end and he delivered something modern, accessible, and lightweight. He clearly knows what users expect from a product.",
+    imgPath: "/images/user.png",
   },
 ];
