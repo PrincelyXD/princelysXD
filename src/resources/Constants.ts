@@ -11,7 +11,7 @@ export const wordCarousel = [
 
 export const counterResources = [
   { value: 3, suffix: "+", label: "Years of Experience" },
-  { value: 60, suffix: "+", label: "Satisfied Clients" },
+  { value: 30, suffix: "+", label: "Satisfied Clients" },
   { value: 44, suffix: "+", label: "Completed Projects" },
   { value: 92, suffix: "%", label: "Client Retention Rate" },
 ];
