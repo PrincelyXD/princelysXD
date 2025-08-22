@@ -50,17 +50,20 @@ export const features = [
 
 export const experienceCards = [
   {
-    review: "Princely delivered a comprehensive real estate management solution for Reapfold Properties that significantly enriched the property purchase experience. From a streamlined referral system to intelligent document generation and real-time tracking, his TypeScript React app—powered by Firebase—elevated operational efficiency and user satisfaction. The integration of multiple payment pipelines, including full and tracked installment plans, was especially well-executed and future-proof.",
+    review: "Princely engineered a multi-role real estate management platform for Reapfold Properties that transformed the property purchase and client onboarding experience. He implemented role-based dashboards for Admins, Realtors, HR, and Clients, integrated Firebase Cloud Functions for automated transactional emails, and built reusable UI components with React and TypeScript. His work on installment tracking, purchase workflows, and performance optimization greatly improved operational efficiency and user trust.",
     imgPath: "/images/rf-logo.png",
     logoPath: "/images/est-logo.png",
-    title: "Full Stack Developer",
+    title: "Frontend Software Engineer",
     date: "November 2024 - Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed a multi-role profile system with custom dashboards and permission-specific workflows.",
+      "Integrated REST APIs for estate listings, onboarding, purchase processing, and installment tracking.",
+      "Implemented Firebase Cloud Functions to trigger automated client communications.",
+      "Built reusable UI components and optimized rendering performance using memoization.",
+      "Established scalable frontend architecture with React, TypeScript, and Tailwind CSS.",
     ],
-  },
+  }
+,  
   {
     review: "During his time as a Frontend Developer Intern at Slatecube, Princely quickly grew from mastering foundational web development concepts to confidently applying advanced technologies across real-world projects. His hands-on approach, dedication to learning, and ability to implement modern frontend stacks made a noticeable impact on our team. His growth throughout the internship directly contributed to him landing a frontend developer role at OEA Consults, an international geospatial intelligence agency.",
     imgPath: "/images/scube-logo.png",
