@@ -79,7 +79,7 @@ const ExperienceSection = ({ refData }: { refData:React.RefObject<HTMLDivElement
                   </GlowCard>
                 </div>
 
-                {/* second-part */}
+             
                 <div className="xl:w-4/6">
                   <div className="flex-start flex">
                     <div className="timeline-wrapper">
